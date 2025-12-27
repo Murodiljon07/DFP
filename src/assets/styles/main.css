@@ -1,0 +1,106 @@
+.section-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.move-btns {
+  display: flex;
+  gap: 10px;
+}
+
+#products {
+  margin-bottom: 80px;
+}
+
+.main-title {
+  display: flex;
+  align-items: center;
+  gap: 100px;
+  margin-bottom: 24px;
+}
+
+.about-us .title {
+  font-family: Galano Grotesque;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  margin-bottom: 15px;
+}
+
+.main-title .title-alt {
+  font-family: Messina Sans;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: #000;
+}
+
+.about-us .text {
+  font-family: Messina Sans;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: var(--text-color);
+}
+
+.pictures-slide {
+  width: 100%;
+  height: auto;
+  margin-top: 98px;
+  margin-bottom: 48px;
+}
+
+.partners {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+
+.parners-box {
+  width: 260px;
+  padding: 62px;
+  border-radius: 16px;
+  box-shadow: 2px 24px 23px 12px rgba(34, 60, 80, 0.2);
+  transition: all 1s;
+}
+
+.parners-box img {
+  height: 100%;
+  width: 100%;
+}
+
+.parners-box:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.go-shopping {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  position: relative;
+  bottom: -230px;
+  height: 461px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background: var(--background-color);
+  background-image: url(../pictures/go-shop.png);
+  border-radius: 65px;
+  padding: 73px 109px;
+}
+
+.go-shop-btn {
+  font-size: 36px;
+  width: 89px;
+  height: 100px;
+  cursor: pointer;
+  border: none;
+  border-radius: 16px;
+}
