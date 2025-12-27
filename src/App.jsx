@@ -3,7 +3,7 @@ import React from "react";
 /* layouts */
 import NavBar from "./layout/NavBar";
 import Hero from "./layout/Hero";
-import Main from "./layout/Main";
+import Main from "./layout/uiMain";
 import Footer from "./layout/footer";
 
 const App = () => {

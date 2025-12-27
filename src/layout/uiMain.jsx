@@ -2,9 +2,10 @@ import "../assets/styles/main.css";
 import "../index.css";
 
 /* components */
-import BTN from "../components/Button";
+import BTN from "../components/Button.jsx";
 
-/* functions */
+/* data */
+import products from "../data/products.js";
 
 const Main = () => {
   return (
@@ -22,7 +23,23 @@ const Main = () => {
           </div>
         </div>
 
-        <section id="main-card-list">{}</section>
+        <section id="main-card-list" className="container">
+          {products.map((item) => {
+            const { id, title, oldPrice, newPrice, img } = item;
+
+            return (
+              <div className="product-card" key={id}>
+                <img src={img} alt={title} className="product-img" />
+                <p className="product-price">
+                  <span className="old-price">£{oldPrice} </span>£{newPrice}
+                </p>
+                <h3 className="product-title">{title}</h3>
+
+                <button className="add-to-card-btn">+</button>
+              </div>
+            );
+          })}
+        </section>
         <BTN text="View all Products"></BTN>
       </section>
 
